@@ -5,7 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
 
-def test_button_add_to_basket(browser, link=link):
+def test_button_add_to_basket_is_presented(browser, link=link):
     browser.get(link)
     time.sleep(1)
     button = WebDriverWait(browser, 10).until(
